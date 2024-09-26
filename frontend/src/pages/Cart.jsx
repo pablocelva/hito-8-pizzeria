@@ -23,7 +23,7 @@ export default function Cart() {
             })
 
             if (response.ok) {
-                setSuccessMessage('Compra realizada con éxito!')
+                setSuccessMessage('🍕 Compra realizada con éxito! ✨')
                 setCart([])
             } else {
                 const errorData = await response.json()
