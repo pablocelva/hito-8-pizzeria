@@ -24,6 +24,8 @@ export default function Cart() {
 
             if (response.ok) {
                 setSuccessMessage('🍕 Compra realizada con éxito! ✨')
+                console.log('🍕 Compra realizada con éxito! ✨')
+                alert('🍕 Compra realizada con éxito! ✨')
                 setCart([])
             } else {
                 const errorData = await response.json()
